@@ -1,3 +1,22 @@
+# Weather App
+[link-netlify-preview]()
+
+### Simple React App
+
+## Task Description
+
+Simple app build with reactJS, working with hooks, react-transitions. The idea is to implements REST API requests.
+
+#### Enum Tech used
+
+* HTML5
+* CSS3
+* JS
+* ReacJS
+* Materialize
+
+<hr>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
