@@ -46,9 +46,9 @@ if (error) {
 
   return (
     <Fragment>
-      <Header title="Weather App"/>
+      <Header title="Kairos Weather App"/>
       <div className="valign-wrapper container-form">
-      <div class="valign fullwidth">
+      <div className="valign fullwidth">
         <div className="container">
           <div className="row">
             <div className="col m6 s12">

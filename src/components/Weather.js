@@ -3,20 +3,23 @@ import PropTypes from 'prop-types';
 
 const Weather = ({result}) => {
 
-    const {name, main} = result; 
+    const {name, main, weather} = result; 
     if(!name) return null;
     //From Kelvin to centigrades
     const kelvin = 273.15;
     const temperature = parseFloat(main.temp - kelvin, 10).toFixed(2); 
     const maxTemperature = parseFloat(main.temp_max - kelvin, 10).toFixed(2); 
-    const minTemperature = parseFloat(main.temp_min - kelvin, 10).toFixed(2); 
+    const minTemperature = parseFloat(main.temp_min - kelvin, 10).toFixed(2);
+    const iconUrl = `http://openweathermap.org/img/wn/${weather[0].icon}@2x.png` 
 
     return ( 
         <Fragment>
             <div className="card-panel white col s12">
                 <div className="black-text">
                     <h2>El clima en {name} es:</h2>
+                    
                     <p className="temperature">
+                    <img src={iconUrl} alt="icon"/>
                         {temperature}
                         <span>&#x2103;</span> 
                     </p>
